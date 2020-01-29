@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:id="@+id/linearLayout"
+        >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/timeNowBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="현재시각"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/swBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="스톱워치"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/timerBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타이머"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/alarmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="알람"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frameLayout"
+        android:layout_below="@+id/linearLayout" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="-50dp"
+        android:orientation="vertical">
+        
+
+    </LinearLayout>-->
+
+
+</RelativeLayout>
+
+<!--
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_fragmentA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="A" />
+
+        <Button
+            android:id="@+id/btn_fragmentB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="B" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>-->
